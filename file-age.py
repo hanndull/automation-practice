@@ -12,7 +12,7 @@ if os.path.isfile(req_path):
     print("Please provide directory path ")
     sys.exit(2)
 
-age = int(input("Look at files that are {x} number of days, or older: "))
+age = int(input("Look at files that are {x} number of days old, or older: "))
 today = datetime.datetime.now()
 
 for file in os.listdir(req_path):
